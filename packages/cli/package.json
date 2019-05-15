@@ -1,0 +1,81 @@
+{
+  "name": "sage-cli",
+  "description": "Performs post-installation operations for Sage.",
+  "version": "1.0.0",
+  "author": "QWp6t",
+  "bin": {
+    "sage": "./bin/sage"
+  },
+  "bugs": "https://github.com/roots/sage-cli/issues",
+  "dependencies": {
+    "@oclif/command": "^1",
+    "@oclif/config": "^1",
+    "@oclif/errors": "^1",
+    "@oclif/plugin-help": "^2",
+    "@oclif/plugin-plugins": "^1",
+    "@sage-cli/plugin-preset": "^1",
+    "@sage-cli/plugin-preset-bootstrap": "^1",
+    "@sage-cli/plugin-preset-none": "^1",
+    "@sage-cli/plugin-setup": "^1",
+    "tslib": "^1"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "files": [
+    "/bin",
+    "/lib",
+    "/npm-shrinkwrap.json",
+    "/oclif.manifest.json"
+  ],
+  "homepage": "https://roots.io/sage/cli",
+  "keywords": [
+    "sage",
+    "sage-cli",
+    "oclif"
+  ],
+  "license": "MIT",
+  "main": "lib/index.js",
+  "oclif": {
+    "commands": "./lib/commands",
+    "bin": "sage",
+    "scope": "sage-cli",
+    "dirname": "sage",
+    "plugins": [
+      "@oclif/plugin-help",
+      "@oclif/plugin-plugins",
+      "@sage-cli/plugin-setup",
+      "@sage-cli/plugin-preset",
+      "@sage-cli/plugin-preset-bootstrap",
+      "@sage-cli/plugin-preset-none"
+    ],
+    "hooks": {
+      "telemetry": [
+        "./lib/hooks/telemetry/console"
+      ]
+    }
+  },
+  "repository": "roots/sage-cli",
+  "scripts": {
+    "clean": "rimraf oclif.manifest.json lib tsconfig.tsbuildinfo *-error.log",
+    "prebuild": "yarn clean",
+    "build": "tsc -b",
+    "postbuild": "oclif-dev manifest && oclif-dev readme --multi",
+    "lint": "tsc -p test --noEmit && tslint -p test -t stylish",
+    "postpublish": "rimraf oclif.manifest.json",
+    "posttest": "yarn lint",
+    "prepack": "yarn build",
+    "preversion": "yarn postpublish",
+    "test": "mocha --forbid-only \"test/**/*.test.ts\"",
+    "version": "oclif-dev readme --multi && git add README.md"
+  },
+  "types": "lib/index.d.ts",
+  "devDependencies": {
+    "@oclif/dev-cli": "^1.22.0",
+    "@oclif/test": "^1.2.4",
+    "@oclif/tslint": "^3.1.1",
+    "rimraf": "^2.6.3",
+    "ts-node": "^8.1.0",
+    "typescript": "^3.4.5"
+  }
+}

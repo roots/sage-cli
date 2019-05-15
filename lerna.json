@@ -1,0 +1,25 @@
+{
+  "version": "0.0.0",
+  "npmClient": "yarn",
+  "useWorkspaces": true,
+  "command": {
+    "create": {
+      "homepage": "https://roots.io/sage/cli",
+      "license": "MIT"
+    },
+    "publish": {
+      "allowBranch": "master"
+    },
+    "bootstrap": {
+      "npmClientArgs": ["--production", "--no-optional"]
+    }
+  },
+  "ignoreChanges": [
+    "**/__fixtures__/**",
+    "**/__tests__/**",
+    "**/*.md"
+  ],
+  "packages": [
+    "packages/*"
+  ]
+}

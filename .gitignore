@@ -1,0 +1,11 @@
+*-debug.log
+*-error.log
+*.map
+.oclif.manifest.json
+.nyc_output
+coverage
+/packages/*/lib
+node_modules
+package-lock.json
+tsconfig.tsbuildinfo
+oclif.manifest.json

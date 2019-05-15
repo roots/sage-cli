@@ -1,0 +1,8 @@
+#!/usr/bin/env node
+
+// If someone REALLY wants to see the warning, they can 😏
+process.env.MEMFS_DONT_WARN = typeof process.env.MEMFS_DONT_WARN === 'undefined' ? '1' : process.env.MEMFS_DONT_WARN;
+
+require('@oclif/command').run()
+  .then(require('@oclif/command/flush'))
+  .catch(require('@oclif/errors/handle'))
