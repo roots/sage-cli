@@ -7,6 +7,7 @@
   "dependencies": {
     "@oclif/command": "^1.5.13",
     "@oclif/parser": "^3.8.0",
+    "chalk": "^2.4.2",
     "cli-ux": "^5.2.1",
     "cosmiconfig": "^5.2.0",
     "fs-extra": "^8.0.1",

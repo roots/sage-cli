@@ -2,6 +2,7 @@ import * as fs from 'fs-extra';
 import walk from 'klaw-sync';
 import { Volume } from 'memfs';
 import * as original_path from 'path';
+import { Dependencies } from './dependencies';
 
 export const path = Object.assign({
   contains: (parent:string, child:string) => parent.split(/[\/\\]/g)
@@ -9,10 +10,17 @@ export const path = Object.assign({
 }, original_path);
 
 export class Filesystem {
-  protected _path = process.cwd();
+  protected _path:string;
   protected fs = new Volume;
-  protected file_list:string[] = [];
-  protected delete_queue:string[] = [];
+  public delete_queue:string[] = [];
+
+  constructor(path:string = process.cwd()) {
+    this._path = path;
+  }
+
+  public get file_list():string[] {
+    return Object.keys(this.memory.toJSON());
+  }
 
   get path() {
     return this._path;
@@ -31,6 +39,10 @@ export class Filesystem {
 
   get persistant() {
     return fs;
+  }
+
+  public clear() {
+    this.fs = new Volume;
   }
 
   public absolute(_path:string) {
@@ -93,6 +105,14 @@ export class Filesystem {
 
     this.mkdir(path.dirname(file));
     this.memory.writeFileSync(this.relative(file), contents, options);
+  }
+
+  public install(dependencies:string|string[], dev:boolean = false) {
+    return new Dependencies(dependencies, this.path).client.install(dev);
+  }
+
+  public uninstall(dependencies:string|string[]) {
+    return new Dependencies(dependencies, this.path).client.uninstall();
   }
 }
 

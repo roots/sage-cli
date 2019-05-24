@@ -59,7 +59,6 @@ export default class Setup extends Command {
     this.should_write_meta = !! meta;
     this.stylesheet_path = this.files.exists(`${this.files.path}/style.css`) ? `${this.files.path}/style.css` : `${this.files.path}/resources/style.css`;
     this.suppress = this.suppress || ! this.files.exists(this.stylesheet_path);
-    this.file_list.push(this.stylesheet_path);
   }
 
   async execute() {

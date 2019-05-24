@@ -17,9 +17,11 @@ USAGE
 
 OPTIONS
   -Y, --suppress    Suppress warnings when overwriting or deleting files
+  --clean           Uninstall all presets before installing specified preset.
   --force           Disregard all failsafes.
   --no-interaction  Do not ask any interactive questions
   --path=path       Custom path to Sage theme
+  --uninstall       Uninstall specified preset.
 
 EXAMPLE
   $ sage preset:bootstrap
@@ -37,9 +39,11 @@ USAGE
 
 OPTIONS
   -Y, --suppress    Suppress warnings when overwriting or deleting files
+  --clean           Uninstall all presets before installing specified preset.
   --force           Disregard all failsafes.
   --no-interaction  Do not ask any interactive questions
   --path=path       Custom path to Sage theme
+  --uninstall       Uninstall specified preset.
 
 EXAMPLE
   $ sage preset:bootstrap
@@ -57,9 +61,11 @@ USAGE
 
 OPTIONS
   -Y, --suppress    Suppress warnings when overwriting or deleting files
+  --clean           Uninstall all presets before installing specified preset.
   --force           Disregard all failsafes.
   --no-interaction  Do not ask any interactive questions
   --path=path       Custom path to Sage theme
+  --uninstall       Uninstall specified preset.
 
 ALIASES
   $ sage preset:vanilla
