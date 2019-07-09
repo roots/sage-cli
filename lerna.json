@@ -8,7 +8,8 @@
       "license": "MIT"
     },
     "publish": {
-      "allowBranch": "master"
+      "allowBranch": "master",
+      "conventionalCommits": true
     },
     "bootstrap": {
       "npmClientArgs": ["--production", "--no-optional"]
