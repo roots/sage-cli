@@ -4,18 +4,6 @@
   "version": "1.0.0",
   "author": "QWp6t",
   "bugs": "https://github.com/roots/sage-cli/issues",
-  "dependencies": {
-    "@oclif/command": "^1",
-    "@oclif/parser": "^3",
-    "chalk": "^2",
-    "cli-ux": "^5",
-    "cosmiconfig": "^5",
-    "fs-extra": "^8",
-    "klaw-sync": "^6",
-    "memfs": "^2",
-    "slugify": "^1",
-    "tslib": "^1"
-  },
   "engines": {
     "node": ">=8.0.0"
   },
@@ -29,7 +17,11 @@
   "license": "MIT",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
-  "repository": "roots/sage-cli",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/roots/sage-cli.git",
+    "directory": "packages/cli-utils"
+  },
   "scripts": {
     "clean": "rimraf lib tsconfig.tsbuildinfo *-error.log",
     "prebuild": "yarn clean",
@@ -40,6 +32,18 @@
     "test": "mocha --forbid-only \"test/**/*.test.ts\"",
     "posttest": "yarn lint",
     "preversion": "yarn postpublish"
+  },
+  "dependencies": {
+    "@oclif/command": "^1",
+    "@oclif/parser": "^3",
+    "chalk": "^2",
+    "cli-ux": "^5",
+    "cosmiconfig": "^5",
+    "fs-extra": "^8",
+    "klaw-sync": "^6",
+    "memfs": "^2",
+    "slugify": "^1",
+    "tslib": "^1"
   },
   "devDependencies": {
     "@oclif/dev-cli": "^1",

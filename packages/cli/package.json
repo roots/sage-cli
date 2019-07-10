@@ -7,18 +7,6 @@
     "sage": "./bin/sage"
   },
   "bugs": "https://github.com/roots/sage-cli/issues",
-  "dependencies": {
-    "@oclif/command": "^1",
-    "@oclif/config": "^1",
-    "@oclif/errors": "^1",
-    "@oclif/plugin-help": "^2",
-    "@oclif/plugin-plugins": "^1",
-    "@sage-cli/plugin-preset": "^1",
-    "@sage-cli/plugin-preset-bootstrap": "^1",
-    "@sage-cli/plugin-preset-none": "^1",
-    "@sage-cli/plugin-setup": "^1",
-    "tslib": "^1"
-  },
   "engines": {
     "node": ">=8.0.0"
   },
@@ -55,7 +43,11 @@
       ]
     }
   },
-  "repository": "roots/sage-cli",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/roots/sage-cli.git",
+    "directory": "packages/cli"
+  },
   "scripts": {
     "clean": "rimraf oclif.manifest.json lib tsconfig.tsbuildinfo *-error.log",
     "prebuild": "yarn clean",
@@ -70,6 +62,18 @@
     "version": "oclif-dev readme --multi && git add README.md"
   },
   "types": "lib/index.d.ts",
+  "dependencies": {
+    "@oclif/command": "^1",
+    "@oclif/config": "^1",
+    "@oclif/errors": "^1",
+    "@oclif/plugin-help": "^2",
+    "@oclif/plugin-plugins": "^1",
+    "@sage-cli/plugin-preset": "^1",
+    "@sage-cli/plugin-preset-bootstrap": "^1",
+    "@sage-cli/plugin-preset-none": "^1",
+    "@sage-cli/plugin-setup": "^1",
+    "tslib": "^1"
+  },
   "devDependencies": {
     "@oclif/dev-cli": "^1",
     "@oclif/test": "^1",

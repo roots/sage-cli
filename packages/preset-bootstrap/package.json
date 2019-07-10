@@ -4,9 +4,6 @@
   "version": "1.0.0",
   "author": "QWp6t",
   "bugs": "https://github.com/roots/sage-cli/issues",
-  "dependencies": {
-    "@sage-cli/cli-utils": "^1"
-  },
   "engines": {
     "node": ">=8.0.0"
   },
@@ -34,7 +31,11 @@
     },
     "repositoryPrefix": "<%- repo %>/blob/v<%- version %>/packages/preset-bootstrap/<%- commandPath %>"
   },
-  "repository": "roots/sage-cli",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/roots/sage-cli.git",
+    "directory": "packages/preset-bootstrap"
+  },
   "scripts": {
     "clean": "rimraf oclif.manifest.json lib tsconfig.tsbuildinfo *-error.log",
     "prebuild": "yarn clean",
@@ -49,6 +50,9 @@
     "version": "oclif-dev readme && git add README.md"
   },
   "types": "lib/index.d.ts",
+  "dependencies": {
+    "@sage-cli/cli-utils": "^1"
+  },
   "devDependencies": {
     "@oclif/dev-cli": "^1",
     "@oclif/test": "^1",
