@@ -12,6 +12,9 @@
     "oclif"
   ],
   "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/roots/sage-cli.git",
