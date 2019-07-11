@@ -27,7 +27,7 @@ EXAMPLE
   $ sage preset:bootstrap
 ```
 
-_See code: [@sage-cli/plugin-preset](https://github.com/roots/sage-cli/blob/v1.0.0-alpha.0/packages/preset/src/commands/preset/index.ts)_
+_See code: [@sage-cli/plugin-preset](https://github.com/roots/sage-cli/blob/v1.0.0-alpha.1/packages/preset/src/commands/preset/index.ts)_
 
 ## `sage preset:bootstrap`
 
@@ -49,7 +49,7 @@ EXAMPLE
   $ sage preset:bootstrap
 ```
 
-_See code: [@sage-cli/plugin-preset-bootstrap](https://github.com/roots/sage-cli/blob/v1.0.0-alpha.0/packages/preset-bootstrap/src/commands/preset/bootstrap.ts)_
+_See code: [@sage-cli/plugin-preset-bootstrap](https://github.com/roots/sage-cli/blob/v1.0.0-alpha.1/packages/preset-bootstrap/src/commands/preset/bootstrap.ts)_
 
 ## `sage preset:none`
 
@@ -75,4 +75,4 @@ EXAMPLES
   $ sage preset:vanilla
 ```
 
-_See code: [@sage-cli/plugin-preset-none](https://github.com/roots/sage-cli/blob/v1.0.0-alpha.0/packages/preset-none/src/commands/preset/none.ts)_
+_See code: [@sage-cli/plugin-preset-none](https://github.com/roots/sage-cli/blob/v1.0.0-alpha.1/packages/preset-none/src/commands/preset/none.ts)_

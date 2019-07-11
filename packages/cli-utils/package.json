@@ -1,7 +1,7 @@
 {
   "name": "@sage-cli/cli-utils",
   "description": "Base command class and utilities for sage-cli.",
-  "version": "1.0.0-alpha.0",
+  "version": "1.0.0-alpha.1",
   "author": "QWp6t",
   "bugs": "https://github.com/roots/sage-cli/issues",
   "engines": {
