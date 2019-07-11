@@ -6,7 +6,7 @@ Perform tasks with sage.
 [![Version](https://img.shields.io/npm/v/sage-cli.svg)](https://npmjs.org/package/sage-cli)
 [![Known Vulnerabilities](https://snyk.io/test/npm/sage-cli/badge.svg)](https://snyk.io/test/npm/sage-cli)
 [![Downloads/week](https://img.shields.io/npm/dw/sage-cli.svg)](https://npmjs.org/package/sage-cli)
-[![License](https://img.shields.io/npm/l/sage-cli.svg)](https://github.com/roots/sage-cli/blob/master/package.json)
+[![License](https://img.shields.io/npm/l/sage-cli.svg)](https://github.com/roots/sage-cli/blob/master/LICENSE.md)
 
 <!-- toc -->
 * [Usage](#usage)
