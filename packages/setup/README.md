@@ -5,7 +5,7 @@ Swap the front-end scaffolding for the theme.
 
 [![Version](https://img.shields.io/npm/v/@sage-cli/plugin-preset.svg)](https://npmjs.org/package/@sage-cli/plugin-preset)
 [![Known Vulnerabilities](https://snyk.io/test/npm/@sage-cli/plugin-preset/badge.svg)](https://snyk.io/test/npm/@sage-cli/plugin-preset)
-[![Downloads/week](https://img.shields.io/npm/dw/@heroku-cli/plugin-status.svg)](https://npmjs.org/package/@sage-cli/plugin-preset)
+[![Downloads/week](https://img.shields.io/npm/dw/@sage-cli/plugin-preset.svg)](https://npmjs.org/package/@sage-cli/plugin-preset)
 [![License](https://img.shields.io/npm/l/@sage-cli/plugin-preset.svg)](https://github.com/roots/sage-cli/blob/master/packages/preset/package.json)
 
 
