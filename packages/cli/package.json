@@ -81,5 +81,6 @@
         "./lib/hooks/telemetry/console"
       ]
     }
-  }
+  },
+  "gitHead": "397ccc8faf06049b3d599ee9557956bd0f77a8a4"
 }

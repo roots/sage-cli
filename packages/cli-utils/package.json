@@ -56,5 +56,6 @@
   "types": "lib/index.d.ts",
   "files": [
     "/lib"
-  ]
+  ],
+  "gitHead": "397ccc8faf06049b3d599ee9557956bd0f77a8a4"
 }

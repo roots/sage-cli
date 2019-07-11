@@ -37,4 +37,4 @@ EXAMPLE
   --tags=wordpress,sage,bootstrap
 ```
 
-_See code: [@sage-cli/plugin-setup](https://github.com/roots/sage-cli/blob/v1.0.0/packages/setup/src/commands/setup/index.ts)_
+_See code: [@sage-cli/plugin-setup](https://github.com/roots/sage-cli/blob/v1.0.0-alpha.0/packages/setup/src/commands/setup/index.ts)_
