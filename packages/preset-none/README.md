@@ -19,7 +19,7 @@ $ npm install -g @sage-cli/plugin-preset-none
 $ sage COMMAND
 running command...
 $ sage (-v|--version|version)
-@sage-cli/plugin-preset-none/1.0.0 linux-x64 node-v10.15.3
+@sage-cli/plugin-preset-none/1.0.0-alpha.0 linux-x64 node-v10.15.3
 $ sage --help [COMMAND]
 USAGE
   $ sage COMMAND
@@ -54,5 +54,5 @@ EXAMPLES
   $ sage preset:vanilla
 ```
 
-_See code: [src/commands/preset/none.ts](https://github.com/roots/sage-cli/blob/v1.0.0/packages/preset-none/src/commands/preset/none.ts)_
+_See code: [src/commands/preset/none.ts](https://github.com/roots/sage-cli/blob/v1.0.0-alpha.0/packages/preset-none/src/commands/preset/none.ts)_
 <!-- commandsstop -->

@@ -1,7 +1,7 @@
 {
   "name": "sage-cli",
   "description": "Performs post-installation operations for Sage.",
-  "version": "1.0.0",
+  "version": "1.0.0-alpha.0",
   "author": "QWp6t",
   "bin": {
     "sage": "./bin/sage"
@@ -28,10 +28,10 @@
     "@oclif/errors": "^1",
     "@oclif/plugin-help": "^2",
     "@oclif/plugin-plugins": "^1",
-    "@sage-cli/plugin-preset": "^1",
-    "@sage-cli/plugin-preset-bootstrap": "^1",
-    "@sage-cli/plugin-preset-none": "^1",
-    "@sage-cli/plugin-setup": "^1",
+    "@sage-cli/plugin-preset": "^1.0.0-alpha.0",
+    "@sage-cli/plugin-preset-bootstrap": "^1.0.0-alpha.0",
+    "@sage-cli/plugin-preset-none": "^1.0.0-alpha.0",
+    "@sage-cli/plugin-setup": "^1.0.0-alpha.0",
     "tslib": "^1"
   },
   "devDependencies": {

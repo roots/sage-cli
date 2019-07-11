@@ -20,7 +20,7 @@ $ npm install -g sage-cli
 $ sage COMMAND
 running command...
 $ sage (-v|--version|version)
-sage-cli/1.0.0 linux-x64 node-v10.15.3
+sage-cli/1.0.0-alpha.0 linux-x64 node-v10.15.3
 $ sage --help [COMMAND]
 USAGE
   $ sage COMMAND

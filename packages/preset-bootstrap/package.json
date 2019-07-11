@@ -1,7 +1,7 @@
 {
   "name": "@sage-cli/plugin-preset-bootstrap",
   "description": "Performs post-installation operations for Sage.",
-  "version": "1.0.0",
+  "version": "1.0.0-alpha.0",
   "author": "QWp6t",
   "bugs": "https://github.com/roots/sage-cli/issues",
   "engines": {
@@ -19,7 +19,7 @@
     "directory": "packages/preset-bootstrap"
   },
   "dependencies": {
-    "@sage-cli/cli-utils": "^1"
+    "@sage-cli/cli-utils": "^1.0.0-alpha.0"
   },
   "devDependencies": {
     "@oclif/dev-cli": "^1",

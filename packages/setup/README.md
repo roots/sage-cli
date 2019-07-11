@@ -19,7 +19,7 @@ $ npm install -g @sage-cli/plugin-setup
 $ sage COMMAND
 running command...
 $ sage (-v|--version|version)
-@sage-cli/plugin-setup/1.0.0 linux-x64 node-v10.15.3
+@sage-cli/plugin-setup/1.0.0-alpha.0 linux-x64 node-v10.15.3
 $ sage --help [COMMAND]
 USAGE
   $ sage COMMAND
@@ -62,5 +62,5 @@ EXAMPLE
   --tags=wordpress,sage,bootstrap
 ```
 
-_See code: [src/commands/setup/index.ts](https://github.com/roots/sage-cli/blob/v1.0.0/packages/setup/src/commands/setup/index.ts)_
+_See code: [src/commands/setup/index.ts](https://github.com/roots/sage-cli/blob/v1.0.0-alpha.0/packages/setup/src/commands/setup/index.ts)_
 <!-- commandsstop -->
