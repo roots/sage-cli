@@ -7,31 +7,15 @@
   "engines": {
     "node": ">=8.0.0"
   },
-  "files": [
-    "/lib"
-  ],
   "homepage": "https://roots.io/sage/cli",
   "keywords": [
     "oclif"
   ],
   "license": "MIT",
-  "main": "lib/index.js",
-  "types": "lib/index.d.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/roots/sage-cli.git",
     "directory": "packages/cli-utils"
-  },
-  "scripts": {
-    "clean": "rimraf lib tsconfig.tsbuildinfo *-error.log",
-    "prebuild": "yarn clean",
-    "build": "tsc -b",
-    "lint": "tsc -p test --noEmit && tslint -p test -t stylish",
-    "prepack": "yarn build",
-    "prepublishOnly": "yarn build",
-    "test": "mocha --forbid-only \"test/**/*.test.ts\"",
-    "posttest": "yarn lint",
-    "preversion": "yarn postpublish"
   },
   "dependencies": {
     "@oclif/command": "^1",
@@ -56,5 +40,21 @@
     "rimraf": "^2",
     "ts-node": "^8",
     "typescript": "^3"
-  }
+  },
+  "scripts": {
+    "clean": "rimraf lib tsconfig.tsbuildinfo *-error.log",
+    "prebuild": "yarn clean",
+    "build": "tsc -b",
+    "lint": "tsc -p test --noEmit && tslint -p test -t stylish",
+    "prepack": "yarn build",
+    "test": "mocha --forbid-only \"test/**/*.test.ts\"",
+    "posttest": "yarn lint",
+    "preversion": "yarn postpublish",
+    "postpublish": "rimraf oclif.manifest.json"
+  },
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "/lib"
+  ]
 }

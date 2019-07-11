@@ -7,34 +7,28 @@
   "engines": {
     "node": ">=8.0.0"
   },
-  "files": [
-    "/lib",
-    "/npm-shrinkwrap.json",
-    "/oclif.manifest.json"
-  ],
   "homepage": "https://roots.io/sage/cli",
   "keywords": [
     "sage",
     "sage-cli"
   ],
   "license": "MIT",
-  "oclif": {
-    "commands": "./lib/commands",
-    "bin": "sage",
-    "devPlugins": [
-      "@oclif/plugin-help"
-    ],
-    "topics": {
-      "setup": {
-        "description": "Sets theme headers and other metadata."
-      }
-    },
-    "repositoryPrefix": "<%- repo %>/blob/v<%- version %>/packages/setup/<%- commandPath %>"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/roots/sage-cli.git",
     "directory": "packages/setup"
+  },
+  "dependencies": {
+    "@sage-cli/cli-utils": "^1",
+    "slugify": "^1"
+  },
+  "devDependencies": {
+    "@oclif/dev-cli": "^1",
+    "@oclif/test": "^1",
+    "@oclif/tslint": "^3",
+    "rimraf": "^2",
+    "ts-node": "^8",
+    "typescript": "^3"
   },
   "scripts": {
     "clean": "rimraf oclif.manifest.json lib tsconfig.tsbuildinfo *-error.log",
@@ -49,17 +43,23 @@
     "test": "mocha --forbid-only \"test/**/*.test.ts\"",
     "version": "oclif-dev readme && git add README.md"
   },
+  "main": "lib/index.js",
   "types": "lib/index.d.ts",
-  "dependencies": {
-    "@sage-cli/cli-utils": "^1",
-    "slugify": "^1"
-  },
-  "devDependencies": {
-    "@oclif/dev-cli": "^1",
-    "@oclif/test": "^1",
-    "@oclif/tslint": "^3",
-    "rimraf": "^2",
-    "ts-node": "^8",
-    "typescript": "^3"
+  "files": [
+    "/lib",
+    "/oclif.manifest.json"
+  ],
+  "oclif": {
+    "commands": "./lib/commands",
+    "bin": "sage",
+    "devPlugins": [
+      "@oclif/plugin-help"
+    ],
+    "topics": {
+      "setup": {
+        "description": "Sets theme headers and other metadata."
+      }
+    },
+    "repositoryPrefix": "<%- repo %>/blob/v<%- version %>/packages/setup/<%- commandPath %>"
   }
 }
