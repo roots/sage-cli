@@ -49,6 +49,7 @@
   "types": "lib/index.d.ts",
   "files": [
     "/lib",
+    "/stubs",
     "/oclif.manifest.json"
   ],
   "oclif": {
