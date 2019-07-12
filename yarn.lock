@@ -861,9 +861,9 @@
   integrity sha512-Ups2dShK52xXa8w6iBWLgcjPJWjais6KPJQq3gQ/88AY6BXoTX+MIGFPrWQO1KLMiQfoTpcLnUwloN4brrVUHw==
 
 "@oclif/parser@^3", "@oclif/parser@^3.7.3", "@oclif/parser@^3.8.0":
-  version "3.8.1"
-  resolved "https://registry.yarnpkg.com/@oclif/parser/-/parser-3.8.1.tgz#3c842ef4a8ce3d1f5bcfa5938d3fbebf1c6a0618"
-  integrity sha512-0OavFuLj6FBTdZDD6DXdNqH4qdLFLQD/PKK1OvNZhUd4/5v/lp6Ftzilwmirf549naNHq0u15uk1YCBvym5tNQ==
+  version "3.8.2"
+  resolved "https://registry.yarnpkg.com/@oclif/parser/-/parser-3.8.2.tgz#4578e99d8e26c7dc9bdf376e9f6184c03c1c8bad"
+  integrity sha512-bIey2Vhgy5yocE+h/UK9mUmywvTmIadz5ZRWOk45jXN6e20DbgXZ8eExC4TjCFkft8BLvI70nJAv3VIloaJW7w==
   dependencies:
     "@oclif/linewrap" "^1.0.0"
     chalk "^2.4.2"
