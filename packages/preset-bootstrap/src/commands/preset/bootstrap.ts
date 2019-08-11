@@ -20,6 +20,6 @@ export default class Bootstrap extends Preset {
 
   async install() {
     await super.install();
-    this.files.copy(path.join(root_path, 'stubs'), path.join(this.files.path, 'resources'));
+    this.files.copy(path.join(root_path, 'stubs'), path.join(this.files.path, 'resources', 'assets'));
   }
 }

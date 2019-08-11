@@ -22,6 +22,6 @@ export default class Vanilla extends Preset {
   async execute() {
     await this.clean();
     this.files.delete(path.join(this.files.path, 'resources', 'assets'));
-    this.files.copy(path.join(root_path, 'stubs'), path.join(this.files.path, 'resources'));
+    this.files.copy(path.join(root_path, 'stubs'), path.join(this.files.path, 'resources', 'assets'));
   }
 }
