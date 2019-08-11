@@ -15,12 +15,26 @@ export class Dependencies {
   }
 
   get client() : IDependencyManager {
-    try {
-      spawnSync('command -v yarn >/dev/null');
+    if (this.isYarn()) {
       return new Yarn(this.dependencies, this.path);
-    } catch (e) {}
+    }
 
     return new NPM(this.dependencies, this.path);
+  }
+
+  protected isYarn() : boolean {
+    try {
+      // user could have yarn installed, but not be using it
+      // this will return false if the user isn't actually using yarn
+      if (! process.env.npm_execpath || process.env.npm_execpath.indexOf('yarn') === -1) {
+        return false;
+      }
+      // test to be sure yarn can be spawned
+      spawnSync('command -v yarn >/dev/null');
+      return true;
+    } catch (e) {}
+
+    return false;
   }
 }
 
@@ -30,6 +44,7 @@ export class NPM extends Dependencies implements IDependencyManager {
 
     return spawnSync('npm', args);
   }
+
   uninstall() {
     const args = ['uninstall'].concat(this.dependencies, ['--prefix', this.path]);
     return spawnSync('npm', args);
@@ -45,6 +60,7 @@ export class Yarn extends Dependencies implements IDependencyManager {
 
     return spawnSync('yarn', args);
   }
+
   uninstall() {
     const args = ['remove'].concat(this.dependencies, ['--cwd', this.path]);
 
