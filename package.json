@@ -2,7 +2,7 @@
   "name": "sage-cli-monorepo",
   "private": true,
   "devDependencies": {
-    "cross-env": "^5.2",
+    "cross-env": "^6.0",
     "eslint": "^6.0",
     "eslint-config-standard": "^14.0",
     "eslint-plugin-import": "^2.18",
