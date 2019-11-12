@@ -23,7 +23,7 @@
   "dependencies": {
     "@oclif/command": "^1",
     "@oclif/parser": "^3",
-    "chalk": "^2",
+    "chalk": "^3",
     "cli-ux": "^5",
     "cosmiconfig": "^5",
     "fs-extra": "^8",
