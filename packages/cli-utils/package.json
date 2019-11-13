@@ -36,7 +36,7 @@
     "@oclif/dev-cli": "^1",
     "@oclif/test": "^1",
     "@oclif/tslint": "^3",
-    "@types/cosmiconfig": "^5",
+    "@types/cosmiconfig": "^6",
     "@types/fs-extra": "^8",
     "@types/klaw-sync": "^6",
     "@types/node": "^12",
