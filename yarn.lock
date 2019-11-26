@@ -3999,10 +3999,10 @@ map-visit@^1.0.0:
   dependencies:
     object-visit "^1.0.0"
 
-memfs@^2:
-  version "2.16.1"
-  resolved "https://registry.yarnpkg.com/memfs/-/memfs-2.16.1.tgz#ef6ed9b24c7df07704758fce42431c3838291ffa"
-  integrity sha512-hOUIxeXPuDeryPx1h+WxkBWJwWmd8f1lYXBdUMFMLEhxGGlaP6ri30eW9K4cMpbuizNsAwQe2SK3KyRa9qodXw==
+memfs@^3:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/memfs/-/memfs-3.0.0.tgz#51197997f479c725e58f66a54280e1e4dfe9c94b"
+  integrity sha512-GmCjl40ke3OSSbwet/VQtoq320gIavoO8bMCe4NDbxuLEFV3Cj47+2I1wnv8af3a6JErJIn7Q6/5GUTiPEysaw==
   dependencies:
     fast-extend "0.0.2"
     fs-monkey "^0.3.3"
