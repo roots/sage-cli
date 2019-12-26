@@ -28,7 +28,7 @@
     "cosmiconfig": "^6",
     "fs-extra": "^8",
     "klaw-sync": "^6",
-    "memfs": "^2",
+    "memfs": "^3",
     "slugify": "^1",
     "tslib": "^1"
   },
